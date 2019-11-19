@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/notes-manager-user.iml" filepath="$PROJECT_DIR$/.idea/notes-manager-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-server-control/user-server-control.iml" filepath="$PROJECT_DIR$/user-server-control/user-server-control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-server-dal/userserverdal.iml" filepath="$PROJECT_DIR$/user-server-dal/userserverdal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-server-facade/userserverfacade.iml" filepath="$PROJECT_DIR$/user-server-facade/userserverfacade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-server-integration/userserverintegration.iml" filepath="$PROJECT_DIR$/user-server-integration/userserverintegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-server-service/userserverservice.iml" filepath="$PROJECT_DIR$/user-server-service/userserverservice.iml" />
+    </modules>
+  </component>
+</project>

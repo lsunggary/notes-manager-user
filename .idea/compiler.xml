@@ -7,16 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="userserverfacade" />
-        <module name="userserverintegration" />
-        <module name="user-server-control" />
-        <module name="userserverservice" />
+        <module name="userservercontrol" />
+        <module name="userservercommon" />
         <module name="userserverdal" />
+        <module name="userserverservice" />
+        <module name="userserverintegration" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="notes-manager-user" target="1.8" />
-      <module name="user-server-common" target="1.8" />
-      <module name="user-server-control" target="1.8" />
       <module name="userservercommon" target="1.8" />
       <module name="userservercontrol" target="1.8" />
       <module name="userserverdal" target="1.8" />
@@ -27,8 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="user-server-common" options="-parameters" />
-      <module name="user-server-control" options="-parameters" />
+      <module name="notes-manager-user" options="-parameters" />
       <module name="userservercommon" options="-parameters" />
       <module name="userservercontrol" options="-parameters" />
       <module name="userserverdal" options="-parameters" />

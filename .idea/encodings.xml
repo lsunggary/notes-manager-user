@@ -3,9 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-server-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user-server-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user-server-control" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/user-server-control" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-server-control" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-server-dal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-server-facade" charset="UTF-8" />

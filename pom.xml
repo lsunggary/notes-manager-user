@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>user-server-control</module>
+        <module>user-server-common</module>
         <module>user-server-dal</module>
         <module>user-server-facade</module>
+        <module>user-server-control</module>
         <module>user-server-integration</module>
         <module>user-server-service</module>
-        <module>user-server-common</module>
     </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -19,14 +19,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>groupId</groupId>
+    <groupId>com.notes</groupId>
     <artifactId>notes-manager-user-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>markdown-server</name>
+    <name>user-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
-        <markdown-server.version>0.0.1-SNAPSHOT</markdown-server.version>
+        <user-server.version>0.0.1-SNAPSHOT</user-server.version>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.RC1</spring-cloud.version>
         <netty-all.version>4.1.25.Final</netty-all.version>
@@ -136,15 +136,51 @@
     </dependencies>
 
     <dependencyManagement>
-    <dependencies>
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-dependencies</artifactId>
-        <version>${spring-cloud.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-    </dependency>
-    </dependencies>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.notes</groupId>
+                <artifactId>user-server-common</artifactId>
+                <version>${user-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.notes</groupId>
+                <artifactId>user-server-dal</artifactId>
+                <version>${user-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.notes</groupId>
+                <artifactId>user-server-control</artifactId>
+                <version>${user-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.notes</groupId>
+                <artifactId>user-server-facade</artifactId>
+                <version>${user-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.notes</groupId>
+                <artifactId>user-server-integration</artifactId>
+                <version>${user-server.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.notes</groupId>
+                <artifactId>user-server-service</artifactId>
+                <version>${user-server.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
     <repositories>
@@ -154,4 +190,5 @@
             <url>https://repo.spring.io/milestone</url>
         </repository>
     </repositories>
+
 </project>
